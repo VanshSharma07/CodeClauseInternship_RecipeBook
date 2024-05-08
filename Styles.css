@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+
+}
+
+header{
+    color:rgb(200, 252, 252);
+    background-color: rgb(55, 43, 5);
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Hero Section */
+.hero-section {
+    position: relative;
+    color: white;
+    background-image: url('Images/360_F_672452471_4kHMWT93ipMIvpg862kRS3FlwvMKg8nS.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    height: 70%;
+    width: 100%;
+}
+
+
+/* Form Styling */
+.form-container {
+    width: 50%;
+    height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: rgba(54, 45, 45, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(243, 239, 239, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group textarea,
+.form-group input[type="url"],
+.form-group input[type="file"] {
+    width: 100%; /* Set width to 100% */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Button Styling */
+button[type="submit"],
+button[type="button"] {
+    position: relative; /* Adjust button position relative to its container */
+    display: block; /* Ensure button takes full width */
+    margin: 0 auto; /* Center button horizontally */
+    margin-top: 20px; /* Add margin to separate button from other form elements */
+    background-color: #ff1a1a;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover,
+button[type="button"]:hover {
+    background-color: #555;
+}
+
+.recipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.recipe-card {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.recipe-card h3 {
+    margin: 0;
+}
+
+.recipe-card p {
+    margin: 10px 0;
+}
+
+.delete-btn {
+    background-color: #ff6347; /* Tomato */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
